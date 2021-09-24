@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Platform Improvement Survey</h1>
+        <p id="description"><em>Take the 2021 Platform Improvement Survey (it takes about 10 minutes – do it for science)</em></p>
+    </header>
+    <main class="main">
+        <form id="survey-form">
+            <!-- NAME PART HERE -->
+            <div id="box-div">
+                        <label for="name" id="name-label" class="label-control">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+            </div>
+            <!-- EMAIL PART HERE -->
+            <div id="box-div">
+                <label for="email" id="email-label" class="label-control">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <!-- AGE PART HERE -->
+            <div id="box-div">
+                <label for="number" id="number-label" class="label-control">Age <em>(Age 16+ can only fill the form)</em>:</label>
+                <input type="number" min="16" max="100" name="number" id="number" class="form-control" placeholder="Enter your age">
+            </div>
+            <!-- OPTION PART HERE -->
+            <div id="box-div">
+                <label for="dropdown" id="dropdown-label" class="label-control">Which option best describes your current role:</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                        <option disabled selected value="non">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Others</option>
+                </select>
+            </div>
+            <!-- RADIO PART GOES HERE -->
+            <div id="box-div">
+                <label for="radio" id="radio-label" class="label-control">Would you recommend this platform to your friends?</label>
+                <br>
+                <label>
+                    <input
+                      name="user-recommend"
+                      value="definitely"
+                      type="radio"
+                      class="input-radio"
+                      checked> Definitely
+                </label>
+                <br>
+                <label>
+                    <input
+                      name="user-recommend"
+                      value="maybe"
+                      type="radio"
+                      class="input-radio"> Maybe
+                </label>
+                <br>
+                <label>
+                    <input
+                      name="user-recommend"
+                      value="notsure"
+                      type="radio"
+                      class="input-radio"> Not Sure
+                </label>
+            </div>
+            <!-- CHECKBOX PART GOES HERE -->
+            <div id="box-div">
+                <label for="checkbox" id="checkbox-label" class="label-control">What features about this platform do you all guys like the most? <em>(You can select multiple options)</em></label>
+                <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature1"
+                        type="checkbox"
+                        class="check-box" checked> Feature-1
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature2"
+                        type="checkbox"
+                        class="check-box"> Feature-2
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature3"
+                        type="checkbox"
+                        class="check-box"> Feature-3
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature4"
+                        type="checkbox"
+                        class="check-box"> Feature-4
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature5"
+                        type="checkbox"
+                        class="check-box"> Feature-5
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature6"
+                        type="checkbox"
+                        class="check-box"> Feature-6
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature7"
+                        type="checkbox"
+                        class="check-box"> Feature-7
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature8"
+                        type="checkbox"
+                        class="check-box"> Feature-8
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature9"
+                        type="checkbox"
+                        class="check-box"> Feature-9
+                    </label>
+                    <br>
+                    <label>
+                        <input
+                        name="select-something"
+                        value="Feature10"
+                        type="checkbox"
+                        class="check-box"> Feature-10
+                    </label>
+            </div>
+            <div id="box-div">
+                <label for="textarea" id="textarea-label" class="label-control">Any comments or suggestion? <em>(Optional)</em></label>
+                <br>
+                <textarea name="textarea" id="textarea" class="textarea-class" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="box-div">
+                <button id="submit" class="submit-button">
+                    SUBMIT
+                </button>
+            </div>
+       </form>
+    </main>
+    <br>
+    <footer class="footer">
+        Made by <a href="https://github.com/Rezy-Dev" target="_blank" id="footer-link">Raunak Neupane</a>
+    </footer>
+</body>
+</html>
